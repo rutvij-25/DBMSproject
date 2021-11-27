@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>LazyCoder || sumit</title>
+
+  <title>sumit</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-image: linear-gradient(to right, pink , aqua);">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h1>Made by:-</h1>
+<h3>Shloka Ganore 32225</h3>
+<h3>Tushuli Patil 32253</h3>
+<h3>Rutvij Wamanse 32271</h3>
+<br><br><br><br><br>
+  
+</body>
+
+
+</html>
